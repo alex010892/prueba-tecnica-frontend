@@ -1,0 +1,18 @@
+<h2>Lista de cohetes</h2>
+<table mat-table [dataSource]="cohetes" class="mat-elevation-z8">
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> Nombre del cohete </th>
+    <td mat-cell *matCellDef="let cohete"> {{ cohete.name }} </td>
+  </ng-container>
+  <ng-container matColumnDef="detalle">
+    <th mat-header-cell *matHeaderCellDef> Detalles </th>
+    <td mat-cell *matCellDef="let cohete">
+      <button class="btn" mat-raised-button color="primary" [routerLink]="['/detalle-cohete', cohete.id]">
+        Detalle cohete
+      </button>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="['name', 'detalle']"></tr>
+  <tr mat-row *matRowDef="let row; columns: ['name', 'detalle']"></tr>
+</table>

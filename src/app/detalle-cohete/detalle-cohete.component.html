@@ -1,0 +1,16 @@
+<div class="card-container">
+  <mat-card class="card-content">
+    <mat-card-header>
+      <mat-card-title class="card-title">Detalles del cohete</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image [src]="detallesCohete.flickr_images[0]" alt="Imagen del cohete">
+    <mat-card-content>
+      <p><strong>Nombre del cohete:</strong> {{ detallesCohete.name }}</p>
+      <p><strong>Descripción:</strong> {{ detallesCohete.description }}</p>
+      <p><strong>Capacidad de carga:</strong> {{ detallesCohete.payload_weights[0].kg }} Kg</p>
+      <p><strong>Empresa:</strong> {{ detallesCohete.company }}</p>
+      <p><strong>Visita:</strong> <a [href]="detallesCohete.wikipedia" target="_blank">{{ detallesCohete.wikipedia
+          }}</a></p>
+    </mat-card-content>
+  </mat-card>
+</div>

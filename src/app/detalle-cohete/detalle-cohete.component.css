@@ -1,0 +1,23 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card-content {
+  background-color: #6e8ef5;
+  width: 700px;
+  padding: 16px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.card-content p {
+  margin: 8px 0;
+}

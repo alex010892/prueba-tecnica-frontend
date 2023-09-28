@@ -1,0 +1,32 @@
+table {
+  width: 100%;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+button {
+  margin-left: 15px;
+}
+
+.mat-header-cell {
+  background-color: #333;
+  color: rgb(180, 12, 12);
+}
+
+.mat-elevation-z8 {
+  width: 80%;
+  margin: 0 auto;
+}

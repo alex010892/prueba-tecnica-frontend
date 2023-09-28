@@ -1,0 +1,18 @@
+.mission-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+
+}
+
+.mission-card {
+  width: 300px;
+  border-radius: 10px;
+  background-color: #718cdce7;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-justify: distribute;
+  text-align: center;
+}

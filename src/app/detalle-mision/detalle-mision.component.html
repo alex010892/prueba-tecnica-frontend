@@ -1,0 +1,32 @@
+<h2>Detalles de la misión</h2>
+<div *ngIf="missionDetails" class="mission-cards-container">
+  <mat-card class="mission-card">
+    <mat-card-content>
+      <p><strong>ID de la misión:</strong> {{ missionDetails.id }}</p>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="mission-card">
+    <mat-card-content>
+      <p><strong>Fecha de lanzamiento:</strong> {{ missionDetails.date_utc | date:'dd/MM/yyyy HH:mm' }}</p>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="mission-card">
+    <mat-card-content>
+      <p><strong>Nombre de la misión:</strong> {{ missionDetails.name }}</p>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="mission-card">
+    <mat-card-content>
+      <p><strong>Nave espacial:</strong> {{ missionDetails.rocket }}</p>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="mission-card">
+    <mat-card-content>
+      <p><strong>Numero de vuelo:</strong> {{ missionDetails.flight_number }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>

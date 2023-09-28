@@ -1,0 +1,33 @@
+<mat-toolbar>
+  <h2>Lista de misiones</h2>
+  <span class="spacer"></span>
+  <mat-toolbar-row>
+    <button mat-raised-button color="primary" routerLink="/lista-cohetes">Ir a la lista de cohetes</button>
+    <button mat-raised-button color="primary" routerLink="/busqueda">Ir a la página de búsqueda</button>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<table mat-table [dataSource]="launches" class="mat-elevation-z8">
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> Nombre de la misión </th>
+    <td mat-cell *matCellDef="let element"> {{ element.name }} </td>
+  </ng-container>
+  <ng-container matColumnDef="date_utc">
+    <th mat-header-cell *matHeaderCellDef> Fecha de lanzamiento </th>
+    <td mat-cell *matCellDef="let element"> {{ element.date_utc | date: 'dd/MM/yyyy HH:mm'}} </td>
+  </ng-container>
+  <ng-container matColumnDef="rocket">
+    <th mat-header-cell *matHeaderCellDef> Cohete </th>
+    <td mat-cell *matCellDef="let element"> {{ element.rocket}} </td>
+  </ng-container>
+  <ng-container matColumnDef="detalle">
+    <th mat-header-cell *matHeaderCellDef> Acciones </th>
+    <td mat-cell *matCellDef="let element">
+      <button class="btn" mat-raised-button color="primary" (click)="detalle(element.id)">
+        Ver detalles
+      </button>
+    </td>
+  </ng-container>
+  <tr mat-header-row *matHeaderRowDef="['name', 'date_utc', 'rocket', 'detalle']"></tr>
+  <tr mat-row *matRowDef="let row; columns: ['name', 'date_utc', 'rocket', 'detalle']"></tr>
+</table>
