@@ -1,27 +1,42 @@
-# PruebaTecnicaFrontend
+# Prueba tecnica para desarrollo frontend Angular
+En este proyecto se crea una aplicación web para mostrar información sobre misiones espaciales utilizando el API de SpaceX y presentando esta información en la interfaz de usuario. 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.6.
+## Configuración del proyecto
+Para ejecutar el proyecto se deben realizar los siguientes pasos:
+- Abrir el proyecto en un editor de código como VSC o IDE.
+- Abrir la terminal de comandos command prompt y ejecutar el siguiente comando:
 
-## Development server
+```
+npm install
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Este comando permite instalar las dependencias necesarias que requiere el proyecto.
 
-## Code scaffolding
+**Nota:** Para ejecutar el proyecto escribir en la terminal el siguiente comando:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+ng s -o
+```
 
-## Build
+## Versión tecnologías utilizadas
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+| Tecnologías        | Versión |
+| :----------------: | :-----: |
+| @angular/cli       | 15.1.6  |
+| @angular/material  | 15.2.9  |
+| Node               | 19.4.0  |
+| npm                | 9.2.0   |   
 
-## Running unit tests
+## Estructura del repositorio
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- node_modules: Carpeta en donde se almacenan las dependencias del proyecto.
+- src: Carpeta principal del código fuente.
+  - app
+    - busqueda: Componente que contiene la página web para realizar búsquedas de misiones o cohetes por su nombre.
+    - detalle-cohete: Componente que contiene los detalles de cada cohete.
+    - detalle-mision: Componente que contiene los detalles de cada misión.
+    - inicio: Componente que contiene la página inicial de la aplicación.
+    - lista-cohetes: Componente que contiene la lista de cohetes.
+    - misiones.service.ts: Almacena servicios utilizados en la aplicación.
+- package.json: Contiene información sobre las dependencias y scripts del proyecto.
+- README.md: Contiene la documentación clara y concisa del proceso de desarrollo.
