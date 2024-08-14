@@ -37,6 +37,6 @@ ng s -o
     - detalle-mision: Componente que contiene los detalles de cada misión.
     - inicio: Componente que contiene la página inicial de la aplicación.
     - lista-cohetes: Componente que contiene la lista de cohetes.
-    - misiones.service.ts: Almacena servicios utilizados en la aplicación.
+    - misiones.service.ts: Almacena servicios utilizados en la aplicación
 - package.json: Contiene información sobre las dependencias y scripts del proyecto.
 - README.md: Contiene la documentación clara y concisa del proceso de desarrollo.
